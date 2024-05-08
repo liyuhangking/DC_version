@@ -32,6 +32,15 @@ python main.py
 ```
 
 
+### About change(when you want to change ui, you should use the command generate new document .py)
+使用QTdesigner时，创建的.qrc文件转化成.py文件方法有三种
+```
+pyrcc5 resource.qrc -o resource_rc.py
+#将文件名由resource改成了resource_rc（为什么加_rc呢?因为qt designer默认导入资源时是加_rc的，也可以不加，但是需要修改.ui文件转化而成的.py文件，具体做法参照问首链接）
+```
+
+###
+
 ### About Packaging
 
 <!-- - install pyinstaller
